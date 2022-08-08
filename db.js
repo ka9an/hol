@@ -2,7 +2,7 @@ var { Database } = require('firebase-firestore-lite')
 var D = new Database({ projectId: 'jiijii' })
 var ref
 var List = async x => {
-    var results = await D.ref('!!').query({
+    var results = await D.ref('-').query({
         // where: [
         //     ['set', '==', X.set]
         // ],
@@ -38,7 +38,7 @@ var Get = async x => {
     return await D.ref('!/' + x).get().catch(r => { return {} }) //.then( r => r || 2)
 }
 var Del = async x => {
-    return await D.ref('!!/' + x).delete().catch(r => { return {} }) //.then( r => r || 2)
+    return await D.ref('-/' + x).delete().catch(r => { return {} }) //.then( r => r || 2)
 }
 var Put = async (x, z) => {
 
