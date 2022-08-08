@@ -3,7 +3,7 @@ const template = `
 <html>
 
 <head>
-    <meta name="viewport" content="heigth=device-heigth, initial-scale=1.7">
+    <meta name="viewport" content="heigth=device-heigth, initial-scale=1.0">
     <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
     <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
     <script type="text/javascript">
@@ -24,7 +24,9 @@ const template = `
     L.mapquest.key = 'brX4s7eKqZr24Z1icIAJzRYOBQEWxtVv'
     var map
     window.onload = async function() {
-        if (!localStorage.geo) await g()
+        
+        if (!localStorage.geo) g()
+
         var geo = localStorage.geo.split(",")
         map = L.mapquest.map('map', {
             center: geo,
