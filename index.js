@@ -1,4 +1,4 @@
-globalThis.TOKEN = "5072265135:AAEN78pCpWTpK4Cerf63o9SCa62Q9Gl8thU"
+globalThis.TOKEN = "5431682186:AAEBQCZqycdyaHFw5hLDxwVvRNtuNSM5IvE"
 import './66o'
 import template from './map'
 
