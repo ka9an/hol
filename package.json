@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "websocket-template",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "index.js",
+  "scripts": {
+  	"w": "wrangler publish",
+    "g": "git add . && git commit -m \"first commit\" && git push -u origin main -f"
+  },
+  "dependencies": {
+  	    "@cloudflare/wrangler": "^1.19.6",
+     "isomorphic-unfetch": "latest",
+    "firebase-firestore-lite": "^1.0.3"
+  }
+}
