@@ -74,7 +74,7 @@ globalThis.Z = async function(r) {
                 return 'https://api.telegram.org/file/bot' + TOKEN + '/' + r.result.file_path
             })
         req.photo = `https://res.cloudinary.com/o6/image/fetch/c_scale,q_auto,w_960/fl_relative,g_north,l_${v.pic},w_960,y_-411/b_rgb:000000,c_fit,co_white,fl_relative,g_north,l_text:Yanone%20Kaffeesatz_48_center:${([ v.ref + " " + req.caption.toLowerCase(), v.ll].join("%0A")).toUpperCase().replace(/ /g, '%0A').replace(/,/g, '%0A')}/${req.photo}`
-        console.info(req.photo)
+       // console.info(req.photo)
         //  if (req.type == "reply") ERR//req.photo = `https://res.cloudinary.com/o6/image/fetch/c_scale,q_auto,w_960/fl_relative,g_north,l_inbn1vg4vn8ohj2rqrcx,w_1.0,y_-240/b_rgb:000000,c_fit,co_white,fl_relative,g_north,l_text:Yanone%20Kaffeesatz_48_center:${req.caption},w_1.0/${req.photo}`
         B.text = await fetch(`https://api.imgbb.com/1/upload?key=64baf4d50e6dc55ad766138bc68c1cf6&name=i&image=${encodeURIComponent(req.photo)}`).then(r => r.json()).then(r => ["ibb.co/" + r.data.id, v.txt + " " + req.caption.toLowerCase(), "www.google.com/maps?q=" + v.ll].join("\n"))
         //await db.get(req.from)
