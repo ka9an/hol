@@ -9,8 +9,8 @@
     "g": "git add . && git commit -m \"first commit\" && git push -u origin main -f"
   },
   "dependencies": {
-  	    "@cloudflare/wrangler": "^1.19.6",
+  	    "@cloudflare/wrangler": "latest",
      "isomorphic-unfetch": "latest",
-    "firebase-firestore-lite": "^1.0.3"
+    "firebase-firestore-lite": "latest"
   }
 }
