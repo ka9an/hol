@@ -39,6 +39,7 @@ globalThis.Z = async function(r) {
     req.chat = req.from.id
     req.from = req.from.username || req.from.title || req.from.first_name
     globalThis.v = await db.get(req.from)
+    console.info(v)
     B = {
         chat_id: req.chat
     }
