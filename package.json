@@ -1,7 +1,7 @@
 {
 	"name": "pages-functions-app",
 	"version": "0.0.8",
-	"sideEffects": false,
+	
 	"main": "dist/worker.js",
 	"scripts": {
 		"build": "wrangler pages functions build --outfile public/_worker.js && yarn g",
