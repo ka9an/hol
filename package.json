@@ -5,7 +5,7 @@
 	"main": "dist/worker.js",
 	"scripts": {
 		"build": "wrangler pages functions build --outfile public/_worker.js && yarn g",
-		"g": "git add . && git commit -m - && git push -u origin main -f",
+		"g": "git add . && git commit -m 0 && git push -u origin main -f",
 		"dev": "npx wrangler pages dev public  --binding=NAME=VALUE --binding=OTHER_NAME=THING=WITH=EQUALS  --port 8789",
 		"test": "npx jest --forceExit",
 		"test:ci": "npx jest --forceExit"
